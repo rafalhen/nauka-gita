@@ -1,0 +1,175 @@
+/* Global */
+
+$color-main: #3498db;
+$color-light: #fff;
+$font-text:'Open sans', sans serif;
+$font-header:'Roboto condensed', sans serif;
+
+.section-title {
+    position: relative;
+    font-size: 36px;
+    margin: 0 0 50px 0;
+    font-family: $font-header;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    color: #3d3d3d;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 108px;
+}
+
+/* Splash */
+
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url(https://images.pexels.com/photos/671658/pexels-photo-671658.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.splash i {
+    font-size: 30px;
+    background: $color-main;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: $color-light;
+    border-radius: 50%;
+}
+
+.page-title {
+    color: $color-light;
+    font-size: 40px;
+    margin: 20px 0 0 0;
+    position: relative;
+    font-family: $font-header;
+}
+
+.page-title::after {
+    position: absolute;
+    content: '';
+    bottom: -28px;
+    left: 50%;
+    width: 100px;
+    height: 5px;
+    transform: translateX(-50%);
+    background: $color-light;
+}
+
+.page-subtitle {
+    color: $color-light;
+    padding: 40px 0;
+}
+
+/* intro */
+
+.intro {
+    background: $color-light;
+}
+
+.intro p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-size: 14px;
+    border-top: solid 5px $color-main;
+    border-bottom: solid 5px $color-main;
+}
+
+.section-title::after {
+    position: absolute;
+    content: '';
+    bottom: -22px;
+    left: 50%;
+    width: 50px;
+    height: 5px;
+    transform: translate(-50%);
+    background: $color-main;
+}
+
+/* about */
+
+.about {
+    background: #f0f0f0;
+}
+
+/* skills */
+
+[class^="skill-"] {
+    position: relative;
+}
+
+.skill-image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.skill-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+}
+
+.skill-right .skill-image {
+    right: 0;   
+}
+
+.skill-right .skill-description {
+    padding: 36px 55% 36px 0;
+    text-align: right;
+}
+
+.skill-left .skill-description {
+    padding: 36px 0 36px 55%;
+    text-align: left;
+}
+
+.skill-title {
+    font-family: $font-header;
+}
+
+.skill-description p {
+    font-family: $font-text;
+}
+
+.skill-image img:hover {
+    transform: scale(3);
+}
+
+/* footer */
+
+.container p {
+    font-family: $font-header;
+}
+    
